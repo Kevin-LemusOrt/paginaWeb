@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+:root {
+    --fondo-principal: #1c1c1c;
+    --fondo-seccion: #252525;
+    --acento: #9a8450;
+    --acento-hover: #c0a96b;
+    --texto-principal: #f2f2f2;
+    --texto-secundario: #cccccc;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--fondo-principal);
+    color: var(--texto-principal);
+}
+
+.pagina {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 24px 0;
+}
+
+/* =========================
+   CATALOGO
+========================= */
+
+.catalogo {
+    text-align: center;
+    margin: 0 0 32px;
+    padding: 25px;
+    background-color: var(--fondo-seccion);
+    border: 1px solid var(--acento);
+    border-radius: 6px;
+}
+
+.catalogo h2 {
+    margin-top: 0;
+}
+
+.catalogo button,
+.encabezado button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: var(--acento);
+    color: var(--fondo-principal);
+    border: 1px solid var(--acento);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.catalogo button:hover,
+.encabezado button:hover {
+    background-color: var(--acento-hover);
+    border-color: var(--acento-hover);
+}
+
+/* =========================
+   SECCIONES DE INFORMACION
+========================= */
+
+.informacio_general,
+.historia_tanques,
+.primera_guerra,
+.segunda_guerra,
+.tanques_modernos,
+.tipos_vehiculos {
+    margin: 0 0 32px;
+    padding: 25px;
+    background-color: var(--fondo-seccion);
+    border-left: 3px solid var(--acento);
+    border-radius: 4px;
+}
+
+.informacio_general h2,
+.historia_tanques h2,
+.primera_guerra h2,
+.segunda_guerra h2,
+.tanques_modernos h2,
+.tipos_vehiculos h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--acento);
+    color: var(--acento-hover);
+}
+
+/* =========================
+   TIPOS DE VEHICULOS
+========================= */
+
+.tipos_vehiculos > div {
+    margin: 20px 0;
+    padding-left: 16px;
+    border-left: 1px solid var(--acento);
+}
+
+.tipos_vehiculos h3 {
+    margin-bottom: 5px;
+    color: var(--acento-hover);
+}
+
+/* =========================
+   PARRAFOS
+========================= */
+
+p {
+    line-height: 1.6;
+    color: var(--texto-secundario);
+}

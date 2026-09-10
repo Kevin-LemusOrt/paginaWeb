@@ -109,6 +109,11 @@ body {
     line-height: 1.5;
 }
 
+.tabla-ficha ul{
+    color: var(--texto-secundario);
+    line-height: 1.5;
+}
+
 
 /* =========================
    IMAGEN
@@ -147,7 +152,18 @@ body {
     border-bottom: 2px solid var(--acento);
 }
 
+.historia h3 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    color: var(--acento);
+}
+
 .historia p {
+    color: var(--texto-secundario);
+    line-height: 1.7;
+}
+
+.historia ul{
     color: var(--texto-secundario);
     line-height: 1.7;
 }
